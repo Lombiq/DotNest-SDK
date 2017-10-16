@@ -3,18 +3,18 @@
     "CssIgnorePatterns": "bootstrap*; reset.css; normalize.css; jquery*; toastr*; foundation*; animate*; inuit*; elements*; ratchet*; hint*; flat-ui*; 960*; skeleton*",
     "EnableMenu": true,
     "EnablePixelPushing": true,
-    "ShowMenu": true
+    "ShowMenu": false
   },
   "CodeGen": {
     "AddTypeScriptReferencePath": true,
     "CamelCaseEnumerationValues": false,
-    "CamelCasePropertyNames": true,
+    "CamelCasePropertyNames": false,
     "CamelCaseTypeNames": false
   },
   "CoffeeScript": {
     "CompileOnBuild": false,
     "CompileOnSave": true,
-    "GenerateSourceMaps": false,
+    "GenerateSourceMaps": true,
     "LintOnBuild": false,
     "LintOnSave": true,
     "LintResultLocation": "Message",
@@ -26,7 +26,7 @@
   },
   "Css": {
     "AdjustRelativePaths": true,
-    "AutoMinify": true,
+    "AutoMinify": false,
     "Autoprefix": false,
     "AutoprefixerBrowsers": null,
     "GzipMinifiedFiles": false,
@@ -38,23 +38,23 @@
     "ShowUnsupported": true,
     "SyncBase64ImageValues": true,
     "SyncVendorValues": true,
-    "ValidateEmbedImages": true,
-    "ValidateStarSelector": true,
-    "ValidateVendorSpecifics": true,
-    "ValidateZeroUnit": true,
+    "ValidateEmbedImages": false,
+    "ValidateStarSelector": false,
+    "ValidateVendorSpecifics": false,
+    "ValidateZeroUnit": false,
     "ValidationLocation": "Messages",
     "GenerateRtlSourceMaps": true,
     "RtlCss": false
   },
   "General": {
     "AllMessagesToOutputWindow": false,
-    "KeepImportantComments": true,
-    "SvgPreviewPane": true,
+    "KeepImportantComments": false,
+    "SvgPreviewPane": false,
     "ShowWEIgnoreLogs": true
   },
   "Html": {
     "AutoMinify": false,
-    "EnableAngularValidation": true,
+    "EnableAngularValidation": false,
     "EnableBootstrapValidation": true,
     "EnableEnterFormat": true,
     "EnableFoundationValidation": true,
@@ -78,28 +78,29 @@
       }
     ],
     "MakeMinified": true,
-    "MinificationMode": "KeepQuotes",
     "OutputDirectory": null,
     "RunOnBuild": false,
+    "MinificationMode": "KeepQuotes",
     "AttributeQuotesRemovalMode": "KeepQuotes",
     "CustomAngularDirectiveList": null,
     "MinifyAngularBindingExpressions": false,
     "MinifyKnockoutBindingExpressions": false,
-    "ProcessableScriptTypeList": null
+    "ProcessableScriptTypeList": null,
+    "EnableMicrodataValidation": true
   },
   "JavaScript": {
     "AutoMinify": true,
-    "BlockCommentCompletion": true,
-    "EvalTreatment": "MakeImmediateSafe",
-    "GenerateSourceMaps": false,
+    "BlockCommentCompletion": false,
+    "GenerateSourceMaps": true,
     "GzipMinifiedFiles": false,
     "LintOnBuild": false,
     "LintOnSave": true,
     "LintResultLocation": "Message",
     "MakeMinified": true,
     "OutputDirectory": null,
-    "RootDirectory": "/Scripts/",
     "RunOnBuild": false,
+    "EvalTreatment": "MakeImmediateSafe",
+    "RootDirectory": "/Scripts/",
     "TermSemicolons": true
   },
   "Less": {
@@ -108,10 +109,11 @@
     "EnableChainCompilation": true,
     "GenerateSourceMaps": false,
     "MinifyInPlace": false,
-    "OutputDirectory": null,
-    "ProcessSourceMapsForEditorEnhancements": true,
-    "ShowPreviewPane": true,
-    "StrictMath": false
+    "OutputDirectory": "",
+    "ProcessSourceMapsForEditorEnhancements": false,
+    "ShowPreviewPane": false,
+    "StrictMath": false,
+    "AdjustRelativePaths": true
   },
   "LiveScript": {
     "CompileOnBuild": false,
@@ -124,17 +126,18 @@
     "WrapClosure": true
   },
   "Markdown": {
-    "AutoHyperlink": false,
-    "AutoNewLines": false,
+    "AutoHyperlink": true,
+    "AutoNewLines": true,
     "CompileOnBuild": false,
-    "CompileOnSave": true,
-    "EncodeProblemUrlCharacters": false,
+    "CompileOnSave": false,
+    "EncodeProblemUrlCharacters": true,
     "GenerateXHTML": true,
-    "LinkEmails": false,
+    "LinkEmails": true,
     "MinifyInPlace": false,
     "OutputDirectory": null,
-    "ShowPreviewPane": true,
-    "StrictBoldItalic": false
+    "ShowPreviewPane": false,
+    "StrictBoldItalic": true,
+    "GlobalPreviewCSSFile": null
   },
   "Scss": {
     "CompileOnBuild": false,
@@ -142,11 +145,11 @@
     "EnableChainCompilation": true,
     "GenerateSourceMaps": true,
     "MinifyInPlace": false,
-    "NumberPrecision": 5,
     "OutputDirectory": null,
     "OutputStyle": "Expanded",
     "ProcessSourceMapsForEditorEnhancements": true,
     "ShowPreviewPane": true,
+    "NumberPrecision": 5,
     "UseRubyRuntime": false
   },
   "Sprite": {
@@ -154,17 +157,17 @@
     "IsVertical": true,
     "LessOutputDirectory": null,
     "Optimize": true,
-    "OutputDirectory": null,
     "RunOnBuild": false,
     "ScssOutputDirectory": null,
     "UseAbsoluteUrl": false,
     "UseFullPathForIdentifierName": true,
+    "OutputDirectory": null,
     "Margin": 1
   },
   "SweetJs": {
     "CompileOnBuild": false,
     "CompileOnSave": true,
-    "GenerateSourceMaps": false,
+    "GenerateSourceMaps": true,
     "MinifyInPlace": false,
     "OutputDirectory": null,
     "ProcessSourceMapsForEditorEnhancements": true,
@@ -174,7 +177,7 @@
     "LintOnBuild": false,
     "LintOnSave": true,
     "LintResultLocation": "Message",
-    "ShowPreviewPane": true
+    "ShowPreviewPane": false
   },
   "Handlebars": {
     "CompileOnBuild": false,
