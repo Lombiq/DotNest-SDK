@@ -16,6 +16,9 @@
 [submodule "Orchard/src/Orchard.Web/Modules/Associativy.Frontends.Administration"]
 	path = Orchard/src/Orchard.Web/Modules/Associativy.Frontends.Administration
 	url = https://github.com/Lombiq/Associativy-Frontend-Engines-Administration
+[submodule "Orchard/src/Orchard.Web/Modules/Associativy.InternalLinkGraphBuilder"]
+	path = Orchard/src/Orchard.Web/Modules/Associativy.InternalLinkGraphBuilder
+	url = https://github.com/Lombiq/Associativy-Internal-Link-Graph-Builder
 [submodule "Orchard/src/Orchard.Web/Modules/Associativy.TagNodes"]
 	path = Orchard/src/Orchard.Web/Modules/Associativy.TagNodes
 	url = https://github.com/Lombiq/Associativy-Tag-Nodes
