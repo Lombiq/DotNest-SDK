@@ -1,15 +1,6 @@
 [submodule "Orchard/src/Orchard.Web/Themes/MarkBartha.BasicBlogTheme"]
 	path = Orchard/src/Orchard.Web/Themes/MarkBartha.BasicBlogTheme
 	url = https://github.com/barthamark/basic-blog-theme
-[submodule "Orchard/src/Orchard.Web/Modules/NGM.Favorite"]
-	path = Orchard/src/Orchard.Web/Modules/NGM.Favorite
-	url = https://github.com/Jetski5822/NGM.Favorite
-[submodule "Orchard/src/Orchard.Web/Modules/NGM.Forum"]
-	path = Orchard/src/Orchard.Web/Modules/NGM.Forum
-	url = https://github.com/Jetski5822/NGM.Forum
-[submodule "Orchard/src/Orchard.Web/Modules/NGM.VoteUpDown"]
-	path = Orchard/src/Orchard.Web/Modules/NGM.VoteUpDown
-	url = https://github.com/Jetski5822/NGM.VoteUpDown
 [submodule "Orchard/src/Orchard.Web/Modules/Associativy.Administration"]
 	path = Orchard/src/Orchard.Web/Modules/Associativy.Administration
 	url = https://github.com/Lombiq/Associativy-Administration
