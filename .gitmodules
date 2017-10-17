@@ -37,9 +37,6 @@
 [submodule "Orchard/src/Orchard.Web/Modules/Lombiq.Layouts"]
 	path = Orchard/src/Orchard.Web/Modules/Lombiq.Layouts
 	url = https://github.com/Lombiq/Lombiq-Layouts
-[submodule "Orchard/src/Orchard.Web/Modules/Om.Orchard.SocialMetaTags"]
-	path = Orchard/src/Orchard.Web/Modules/Om.Orchard.SocialMetaTags
-	url = https://github.com/Lombiq/Om.Orchard.SocialMetaTags
 [submodule "Orchard/src/Orchard.Web/Modules/Lombiq.AceEditor"]
 	path = Orchard/src/Orchard.Web/Modules/Lombiq.AceEditor
 	url = https://github.com/Lombiq/Orchard-Ace-Editor
