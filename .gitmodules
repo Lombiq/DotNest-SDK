@@ -67,6 +67,9 @@
 [submodule "Orchard/src/Orchard.Web/Modules/Lombiq.SimpleAnalytics"]
 	path = Orchard/src/Orchard.Web/Modules/Lombiq.SimpleAnalytics
 	url = https://github.com/Lombiq/Orchard-Simple-Analytics
+[submodule "Orchard/src/Orchard.Web/Modules/Piedone.TargetBlank"]
+	path = Orchard/src/Orchard.Web/Modules/Piedone.TargetBlank
+	url = https://github.com/Lombiq/Orchard-Target-Blank
 [submodule "Orchard/src/Orchard.Web/Modules/Piedone.ThemeOverride"]
 	path = Orchard/src/Orchard.Web/Modules/Piedone.ThemeOverride
 	url = https://github.com/Lombiq/Orchard-Theme-Override
