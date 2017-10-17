@@ -1,0 +1,96 @@
+[submodule "Orchard/src/Orchard.Web/Themes/MarkBartha.BasicBlogTheme"]
+	path = Orchard/src/Orchard.Web/Themes/MarkBartha.BasicBlogTheme
+	url = https://github.com/barthamark/basic-blog-theme
+[submodule "Orchard/src/Orchard.Web/Modules/NGM.Favorite"]
+	path = Orchard/src/Orchard.Web/Modules/NGM.Favorite
+	url = https://github.com/Jetski5822/NGM.Favorite
+[submodule "Orchard/src/Orchard.Web/Modules/NGM.Forum"]
+	path = Orchard/src/Orchard.Web/Modules/NGM.Forum
+	url = https://github.com/Jetski5822/NGM.Forum
+[submodule "Orchard/src/Orchard.Web/Modules/NGM.VoteUpDown"]
+	path = Orchard/src/Orchard.Web/Modules/NGM.VoteUpDown
+	url = https://github.com/Jetski5822/NGM.VoteUpDown
+[submodule "Orchard/src/Orchard.Web/Modules/Associativy.Administration"]
+	path = Orchard/src/Orchard.Web/Modules/Associativy.Administration
+	url = https://github.com/Lombiq/Associativy-Administration
+[submodule "Orchard/src/Orchard.Web/Modules/Associativy"]
+	path = Orchard/src/Orchard.Web/Modules/Associativy
+	url = https://github.com/Lombiq/Associativy-Core
+[submodule "Orchard/src/Orchard.Web/Modules/Associativy.Extensions"]
+	path = Orchard/src/Orchard.Web/Modules/Associativy.Extensions
+	url = https://github.com/Lombiq/Associativy-Extensions
+[submodule "Orchard/src/Orchard.Web/Modules/Associativy.Frontends"]
+	path = Orchard/src/Orchard.Web/Modules/Associativy.Frontends
+	url = https://github.com/Lombiq/Associativy-Frontend-Engines
+[submodule "Orchard/src/Orchard.Web/Modules/Associativy.Frontends.Administration"]
+	path = Orchard/src/Orchard.Web/Modules/Associativy.Frontends.Administration
+	url = https://github.com/Lombiq/Associativy-Frontend-Engines-Administration
+[submodule "Orchard/src/Orchard.Web/Modules/Associativy.TagNodes"]
+	path = Orchard/src/Orchard.Web/Modules/Associativy.TagNodes
+	url = https://github.com/Lombiq/Associativy-Tag-Nodes
+[submodule "Orchard/src/Orchard.Web/Modules/Associativy.Taxonomies.Adapter"]
+	path = Orchard/src/Orchard.Web/Modules/Associativy.Taxonomies.Adapter
+	url = https://github.com/Lombiq/Associativy-Taxonomies-Adapter
+[submodule "Orchard/src/Orchard.Web/Modules/Piedone.Combinator"]
+	path = Orchard/src/Orchard.Web/Modules/Piedone.Combinator
+	url = https://github.com/Lombiq/Combinator
+[submodule "Orchard/src/Orchard.Web/Modules/Piedone.HelpfulExtensions"]
+	path = Orchard/src/Orchard.Web/Modules/Piedone.HelpfulExtensions
+	url = https://github.com/Lombiq/Helpful-Extensions
+[submodule "Orchard/src/Orchard.Web/Modules/Piedone.HelpfulLibraries"]
+	path = Orchard/src/Orchard.Web/Modules/Piedone.HelpfulLibraries
+	url = https://github.com/Lombiq/Helpful-Libraries
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.Fields"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.Fields
+	url = https://github.com/Lombiq/Lombiq-Fields
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.Layouts"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.Layouts
+	url = https://github.com/Lombiq/Lombiq-Layouts
+[submodule "Orchard/src/Orchard.Web/Modules/Om.Orchard.SocialMetaTags"]
+	path = Orchard/src/Orchard.Web/Modules/Om.Orchard.SocialMetaTags
+	url = https://github.com/Lombiq/Om.Orchard.SocialMetaTags
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.AceEditor"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.AceEditor
+	url = https://github.com/Lombiq/Orchard-Ace-Editor
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.Hosting.AlgoliaSearch"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.Hosting.AlgoliaSearch
+	url = https://github.com/Lombiq/Orchard-Algolia-Search
+[submodule "Orchard/src/Orchard.Web/Modules/Piedone.Avatars"]
+	path = Orchard/src/Orchard.Web/Modules/Piedone.Avatars
+	url = https://github.com/Lombiq/Orchard-Avatars
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.Hosting.Azure.ApplicationInsights"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.Hosting.Azure.ApplicationInsights
+	url = https://github.com/Lombiq/Orchard-Azure-Application-Insights
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.Hosting.Azure.Indexing"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.Hosting.Azure.Indexing
+	url = https://github.com/Lombiq/Orchard-Azure-Indexing
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.Hosting.DistributedEvents"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.Hosting.DistributedEvents
+	url = https://github.com/Lombiq/Orchard-Distributed-Events
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.FeedAggregator"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.FeedAggregator
+	url = https://github.com/Lombiq/Orchard-Feed-Aggregator
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.LiquidMarkup"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.LiquidMarkup
+	url = https://github.com/Lombiq/Orchard-Liquid-Markup
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.RestSharp"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.RestSharp
+	url = https://github.com/Lombiq/Orchard-RestSharp
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.SimpleAnalytics"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.SimpleAnalytics
+	url = https://github.com/Lombiq/Orchard-Simple-Analytics
+[submodule "Orchard/src/Orchard.Web/Modules/Piedone.ThemeOverride"]
+	path = Orchard/src/Orchard.Web/Modules/Piedone.ThemeOverride
+	url = https://github.com/Lombiq/Orchard-Theme-Override
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.Watcher"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.Watcher
+	url = https://github.com/Lombiq/Orchard-Watcher
+[submodule "Orchard/src/Orchard.Web/Themes/Lombiq.OrchardCommunityTheme"]
+	path = Orchard/src/Orchard.Web/Themes/Lombiq.OrchardCommunityTheme
+	url = https://github.com/Lombiq/Orchard-Community-Theme
+[submodule "Orchard/src/Orchard.Web/Themes/Piedone.PrettyGoodBaseTheme"]
+	path = Orchard/src/Orchard.Web/Themes/Piedone.PrettyGoodBaseTheme
+	url = https://github.com/Lombiq/Pretty-Good-Base-Theme
+[submodule "Orchard/src/Orchard.Web/Themes/Lombiq.PrettyGoodBootstrapBaseTheme"]
+	path = Orchard/src/Orchard.Web/Themes/Lombiq.PrettyGoodBootstrapBaseTheme
+	url = https://github.com/Lombiq/Pretty-Good-Bootstrap-Base-Theme
