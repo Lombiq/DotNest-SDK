@@ -106,3 +106,9 @@
 [submodule "Orchard/src/Orchard.Web/Themes/RDB.Bindery"]
 	path = Orchard/src/Orchard.Web/Themes/RDB.Bindery
 	url = https://github.com/Lombiq/RDB.Bindery
+[submodule "Orchard/src/Orchard.Web/Modules/NGM.Forum"]
+	path = Orchard/src/Orchard.Web/Modules/NGM.Forum
+	url = https://github.com/Lombiq/NGM.Forum
+[submodule "Orchard/src/Orchard.Web/Modules/Om.Orchard.SocialMetaTags"]
+	path = Orchard/src/Orchard.Web/Modules/Om.Orchard.SocialMetaTags
+	url = https://github.com/Lombiq/Om.Orchard.SocialMetaTags
