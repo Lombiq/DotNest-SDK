@@ -112,3 +112,6 @@
 [submodule "Orchard/src/Orchard.Web/Modules/Om.Orchard.SocialMetaTags"]
 	path = Orchard/src/Orchard.Web/Modules/Om.Orchard.SocialMetaTags
 	url = https://github.com/Lombiq/Om.Orchard.SocialMetaTags
+[submodule "Orchard/src/Orchard.Web/Modules/Contrib.Profile"]
+	path = Orchard/src/Orchard.Web/Modules/Contrib.Profile
+	url = https://github.com/Lombiq/Orchard-Profile
