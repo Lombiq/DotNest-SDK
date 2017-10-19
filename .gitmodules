@@ -1,30 +1,6 @@
 [submodule "Orchard/src/Orchard.Web/Themes/MarkBartha.BasicBlogTheme"]
 	path = Orchard/src/Orchard.Web/Themes/MarkBartha.BasicBlogTheme
 	url = https://github.com/barthamark/basic-blog-theme
-[submodule "Orchard/src/Orchard.Web/Modules/Associativy.Administration"]
-	path = Orchard/src/Orchard.Web/Modules/Associativy.Administration
-	url = https://github.com/Lombiq/Associativy-Administration
-[submodule "Orchard/src/Orchard.Web/Modules/Associativy"]
-	path = Orchard/src/Orchard.Web/Modules/Associativy
-	url = https://github.com/Lombiq/Associativy-Core
-[submodule "Orchard/src/Orchard.Web/Modules/Associativy.Extensions"]
-	path = Orchard/src/Orchard.Web/Modules/Associativy.Extensions
-	url = https://github.com/Lombiq/Associativy-Extensions
-[submodule "Orchard/src/Orchard.Web/Modules/Associativy.Frontends"]
-	path = Orchard/src/Orchard.Web/Modules/Associativy.Frontends
-	url = https://github.com/Lombiq/Associativy-Frontend-Engines
-[submodule "Orchard/src/Orchard.Web/Modules/Associativy.Frontends.Administration"]
-	path = Orchard/src/Orchard.Web/Modules/Associativy.Frontends.Administration
-	url = https://github.com/Lombiq/Associativy-Frontend-Engines-Administration
-[submodule "Orchard/src/Orchard.Web/Modules/Associativy.InternalLinkGraphBuilder"]
-	path = Orchard/src/Orchard.Web/Modules/Associativy.InternalLinkGraphBuilder
-	url = https://github.com/Lombiq/Associativy-Internal-Link-Graph-Builder
-[submodule "Orchard/src/Orchard.Web/Modules/Associativy.TagNodes"]
-	path = Orchard/src/Orchard.Web/Modules/Associativy.TagNodes
-	url = https://github.com/Lombiq/Associativy-Tag-Nodes
-[submodule "Orchard/src/Orchard.Web/Modules/Associativy.Taxonomies.Adapter"]
-	path = Orchard/src/Orchard.Web/Modules/Associativy.Taxonomies.Adapter
-	url = https://github.com/Lombiq/Associativy-Taxonomies-Adapter
 [submodule "Orchard/src/Orchard.Web/Modules/Piedone.Combinator"]
 	path = Orchard/src/Orchard.Web/Modules/Piedone.Combinator
 	url = https://github.com/Lombiq/Combinator
