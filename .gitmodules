@@ -103,6 +103,12 @@
 [submodule "Orchard/src/Orchard.Web/Themes/PJS.Boostrap"]
 	path = Orchard/src/Orchard.Web/Themes/PJS.Boostrap
 	url = https://github.com/Lombiq/PJS.Boostrap
+[submodule "Orchard/src/Orchard.Web/Themes/PJS.FlatJack"]
+	path = Orchard/src/Orchard.Web/Themes/PJS.FlatJack
+	url = https://github.com/Lombiq/PJS.FlatJack
+[submodule "Orchard/src/Orchard.Web/Themes/PJS.ReTouch"]
+	path = Orchard/src/Orchard.Web/Themes/PJS.ReTouch
+	url = https://github.com/Lombiq/PJS.ReTouch
 [submodule "Orchard/src/Orchard.Web/Themes/RDB.Bindery"]
 	path = Orchard/src/Orchard.Web/Themes/RDB.Bindery
 	url = https://github.com/Lombiq/RDB.Bindery
