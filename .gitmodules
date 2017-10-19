@@ -121,3 +121,15 @@
 [submodule "Orchard/src/Orchard.Web/Modules/Contrib.Profile"]
 	path = Orchard/src/Orchard.Web/Modules/Contrib.Profile
 	url = https://github.com/Lombiq/Orchard-Profile
+[submodule "Orchard/src/Orchard.Web/Themes/ElementalGankery.MediaTheme"]
+	path = Orchard/src/Orchard.Web/Themes/ElementalGankery.MediaTheme
+	url = https://github.com/BenedekFarkas/Elemental-Gankery-Media-Theme
+[submodule "Orchard/src/Orchard.Web/Themes/Dotnest-BisStrap.1.3"]
+	path = Orchard/src/Orchard.Web/Themes/Dotnest-BisStrap.1.3
+	url = https://github.com/Lombiq/Vassall-Theme
+[submodule "Orchard/src/Orchard.Web/Themes/GPUDayTheme"]
+	path = Orchard/src/Orchard.Web/Themes/GPUDayTheme
+	url = https://github.com/Lombiq/GPU-Day-Theme
+[submodule "Orchard/src/Orchard.Web/Themes/OrchardAmbassadors.Theme"]
+	path = Orchard/src/Orchard.Web/Themes/OrchardAmbassadors.Theme
+	url = https://github.com/Lombiq/Orchard-Ambassadors-Theme
