@@ -1,10 +1,10 @@
-﻿Name: DotNest.Sdk
-AntiForgery: enabled
-Author: The Orchard Team
-Website: http://orchardproject.net
+﻿AntiForgery: enabled
+Author: Lombiq Technologies Ltd.
+Website: http://dotnest.com
+Category: DotNest
 Version: 1.0
-OrchardVersion: 1.0
-Description: Description for the module
+OrchardVersion: 1.10
 Features:
     DotNest.Sdk:
-        Description: Description for feature DotNest.Sdk.
+        Name: DotNest SDK
+        Description: Developer features for building Media Themes for DotNest with the DotNest SDK.
