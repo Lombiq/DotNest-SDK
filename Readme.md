@@ -6,11 +6,13 @@
 
 [DotNest SDK](https://github.com/Lombiq/DotNest-SDK) is a local developer environment for building Media Themes to be deployed on sites running on [DotNest](http://dotnest.com). The base of the source code on the `master` branch is the same Orchard version that is running on DotNest as well as all the hotfixes and mods we've applied to it. On top of that, all the open-source modules and themes are added as Git submodules, which gives you the ability to develop your theme and run your site locally in an environment quite close to the live DotNest site.
 
+This project (along with [DotNest](https://dotnest.com), the [Orchard CMS](http://orchardproject.net) SaaS) is developed by [Lombiq Technologies Ltd](https://lombiq.com). Commercial-grade support is available through Lombiq.
+
 
 ## Getting started
 
 - Go to GitHub and fork the [DotNest SDK](https://github.com/Lombiq/DotNest-SDK) repository or create an empty repository. For simplicity, we'll refer to your repository as `fork` from now on and assume a simple branching strategy with only one additional branch for development, but your use-case might be more complex.
-- Set up a mirror on [Git-Hg Mirror](http://githgmirror.com) to automatically (and continuously) synchronize every commit from the original repository to your fork. This gives you an easy way to always work with same code base as what is running on DotNest.
+- Set up a mirror on [Git-Hg Mirror](https://githgmirror.com) to automatically (and continuously) synchronize every commit from the original repository to your fork. This gives you an easy way to always work with same code base as what is running on DotNest.
   - The `Git clone URL` should be `git+https://github.com/Lombiq/DotNest-SDK.git`.
   - The `Hg clone URL` (don't worry about `Hg`) should be a similar URL pointing to your fork with some authentication details to allow Git-Hg Mirror to push to your repository. You create an access token under under [your GitHub settings](https://github.com/settings/tokens) (select full `repo` access) and use it as follows: `git+https://0123456789abcdef0123456789abcdef:x-oauth-basic@github.com/AwesomeDeveloper/Awesome-Project.git`.
   - The `Mirroring direction` should be `Git to Hg`.
