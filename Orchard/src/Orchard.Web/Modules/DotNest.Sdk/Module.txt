@@ -8,3 +8,4 @@ Features:
     DotNest.Sdk:
         Name: DotNest SDK
         Description: Developer features for building Media Themes for DotNest with the DotNest SDK.
+        Dependencies: Shapes
