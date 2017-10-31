@@ -4,7 +4,7 @@
 
 ## Overview
 
-[DotNest SDK](https://github.com/Lombiq/DotNest-SDK) is a local developer environment for building Media Themes to be deployed on sites running on [DotNest](http://dotnest.com). The base of the source code on the `master` branch is the same Orchard version that is running on DotNest as well as all the hotfixes and mods we've applied to it. On top of that, all the open-source modules and themes are added as `Git submodules`, which gives you the ability to develop your theme and run your site locally in an environment quite close to the live DotNest site.
+[DotNest SDK](https://github.com/Lombiq/DotNest-SDK) is a local developer environment for building Media Themes to be deployed on sites running on [DotNest](http://dotnest.com). The base of the source code on the `master` branch is the same Orchard version that is running on DotNest as well as all the hotfixes and mods we've applied to it. On top of that, all the open-source modules and themes are added as Git submodules, which gives you the ability to develop your theme and run your site locally in an environment quite close to the live DotNest site.
 
 
 ## Getting started
@@ -21,6 +21,7 @@
 
 - By setting up the mirror in a slightly different way, you can also use Mercurial for your project. In that case the authentication details are defined in the `username:password` format (make sure that the user has write access to the repository).
 - Note that the [DotNest SDK is also available as a Mercurial repository on Bitbucket](https://bitbucket.org/Lombiq/dotnest-sdk), but the Git and Hg repositories of the DotNest SDK are mirrored bi-directionally, so it doesn't matter which one you're synchronizing from.
+- You need to enable the `hggit` extension to be able to checkout the Git submodules in a Mercurial repository.
 
 
 ## Working with the repository 
