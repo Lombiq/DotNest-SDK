@@ -358,6 +358,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piedone.ThemeOverride", "Or
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNest.Sdk", "Orchard.Web\Modules\DotNest.Sdk\DotNest.Sdk.csproj", "{3C9CE0CE-4541-48D4-8759-305B77DF5FA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onestop.Seo", "Orchard.Web\Modules\Onestop.Seo\Onestop.Seo.csproj", "{6FAF760D-BFF1-4395-AF35-E55498D76140}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -1554,6 +1556,16 @@ Global
 		{3C9CE0CE-4541-48D4-8759-305B77DF5FA7}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{3C9CE0CE-4541-48D4-8759-305B77DF5FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C9CE0CE-4541-48D4-8759-305B77DF5FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FAF760D-BFF1-4395-AF35-E55498D76140}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{6FAF760D-BFF1-4395-AF35-E55498D76140}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
+		{6FAF760D-BFF1-4395-AF35-E55498D76140}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{6FAF760D-BFF1-4395-AF35-E55498D76140}.Coverage|Any CPU.Build.0 = Release|Any CPU
+		{6FAF760D-BFF1-4395-AF35-E55498D76140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FAF760D-BFF1-4395-AF35-E55498D76140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FAF760D-BFF1-4395-AF35-E55498D76140}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{6FAF760D-BFF1-4395-AF35-E55498D76140}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{6FAF760D-BFF1-4395-AF35-E55498D76140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FAF760D-BFF1-4395-AF35-E55498D76140}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1680,6 +1692,7 @@ Global
 		{3E7FBD71-B456-4528-8509-A0FE06DBC84B} = {CB82E664-8B1C-42D4-A1EA-E0C15054C4E1}
 		{A743F265-A1D7-4078-957F-04E9D196A55E} = {CB82E664-8B1C-42D4-A1EA-E0C15054C4E1}
 		{3C9CE0CE-4541-48D4-8759-305B77DF5FA7} = {CB82E664-8B1C-42D4-A1EA-E0C15054C4E1}
+		{6FAF760D-BFF1-4395-AF35-E55498D76140} = {CB82E664-8B1C-42D4-A1EA-E0C15054C4E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
