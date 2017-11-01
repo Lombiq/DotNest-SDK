@@ -41,6 +41,7 @@ namespace Orchard.OutputCache.Filters {
         private readonly ICacheService _cacheService;
         private readonly ISignals _signals;
         private readonly ShellSettings _shellSettings;
+        private readonly ICachingEventHandler _cachingEvents;
         private bool _isDisposed = false;
 
         public ILogger Logger { get; set; }
@@ -55,7 +56,8 @@ namespace Orchard.OutputCache.Filters {
             IClock clock,
             ICacheService cacheService,
             ISignals signals,
-            ShellSettings shellSettings) {
+            ShellSettings shellSettings,
+            ICachingEventHandler cachingEvents) {
 
             _cacheManager = cacheManager;
             _cacheStorageProvider = cacheStorageProvider;
@@ -67,6 +69,7 @@ namespace Orchard.OutputCache.Filters {
             _cacheService = cacheService;
             _signals = signals;
             _shellSettings = shellSettings;
+            _cachingEvents = cachingEvents;
 
             Logger = NullLogger.Instance;
         }
@@ -226,6 +229,12 @@ namespace Orchard.OutputCache.Filters {
                         // To prevent access to the original lifetime scope a new work context scope should be created here and dependencies
                         // should be resolved from it.
 
+                        // Recheck the response status code incase it was modified before the callback.
+                        if (response.StatusCode != 200) {
+                            Logger.Debug("Response for item '{0}' will not be cached because status code was set to {1} during rendering.", _cacheKey, response.StatusCode);
+                            return;
+                        }
+
                         using (var scope = _workContextAccessor.CreateWorkContextScope()) {
                             var cacheItem = new CacheItem() {
                                 CachedOnUtc = _now,
@@ -370,6 +379,9 @@ namespace Orchard.OutputCache.Filters {
             foreach (var p in filterContext.ActionParameters)
                 result.Add("PARAM:" + p.Key, p.Value);
 
+            // Vary by scheme.
+            result.Add("scheme", filterContext.RequestContext.HttpContext.Request.Url.Scheme);
+
             // Vary by theme.
             result.Add("theme", _themeManager.GetRequestTheme(filterContext.RequestContext).Id.ToLowerInvariant());
 
@@ -384,10 +396,16 @@ namespace Orchard.OutputCache.Filters {
             // Vary by configured request headers.
             var requestHeaders = filterContext.RequestContext.HttpContext.Request.Headers;
             foreach (var varyByRequestHeader in CacheSettings.VaryByRequestHeaders) {
-                if (requestHeaders.AllKeys.Contains(varyByRequestHeader))
+                if (requestHeaders[varyByRequestHeader]!=null)
                     result["HEADER:" + varyByRequestHeader] = requestHeaders[varyByRequestHeader];
             }
 
+            // Vary by configured cookies.
+            var requestCookies = filterContext.RequestContext.HttpContext.Request.Cookies;
+            foreach (var varyByRequestCookies in CacheSettings.VaryByRequestCookies) {
+                if (requestCookies[varyByRequestCookies] != null)
+                    result["COOKIE:" + varyByRequestCookies] = requestCookies[varyByRequestCookies].Value;
+            }
 
             // Vary by request culture if configured.
             if (CacheSettings.VaryByCulture) {
@@ -529,13 +547,13 @@ namespace Orchard.OutputCache.Filters {
                     maxAge = TimeSpan.Zero;
                 }
                 response.Cache.SetCacheability(HttpCacheability.Public);
+                response.Cache.SetOmitVaryStar(true);
                 response.Cache.SetMaxAge(maxAge);
             }
 
             // Keeping this example for later usage.
             // response.DisableUserCache();
             // response.DisableKernelCache();
-            // response.Cache.SetOmitVaryStar(true);
 
             if (CacheSettings.VaryByQueryStringParameters == null) {
                 response.Cache.VaryByParams["*"] = true;
@@ -601,6 +619,9 @@ namespace Orchard.OutputCache.Filters {
                 }
             }
 
+            //make CacheKey morphable by external modules
+            _cachingEvents.KeyGenerated(keyBuilder);
+
             return keyBuilder.ToString();
         }
 
@@ -610,7 +631,7 @@ namespace Orchard.OutputCache.Filters {
                 return cacheItem;
             }
             catch (Exception e) {
-                Logger.Error(e, "An unexpected error occured while reading a cache entry");
+                Logger.Error(e, "An unexpected error occurred while reading a cache entry");
             }
 
             return null;
