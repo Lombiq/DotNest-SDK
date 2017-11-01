@@ -1,0 +1,11 @@
+﻿AntiForgery: enabled
+Author: Lombiq Technologies Ltd.
+Website: http://dotnest.com
+Category: DotNest
+Version: 1.0
+OrchardVersion: 1.10
+Features:
+    DotNest.Sdk:
+        Name: DotNest SDK
+        Description: Developer features for building Media Themes for DotNest with the DotNest SDK.
+        Dependencies: Shapes
