@@ -17,16 +17,19 @@ namespace DotNest.Sdk.Filters
         private readonly Lazy<IResourceManager> _resourceManager;
         private readonly Lazy<IWorkContextAccessor> _workContextAccessor;
         private readonly Lazy<IVirtualPathProvider> _virtualPathProvider;
+        private readonly UrlHelper _urlHelper;
 
 
         public AutomaticStaticResourceIncludingFilter(
             Lazy<IResourceManager> resourceManager,
             Lazy<IWorkContextAccessor> workContextAccessor,
-            Lazy<IVirtualPathProvider> virtualPathProvider)
+            Lazy<IVirtualPathProvider> virtualPathProvider,
+            UrlHelper urlHelper)
         {
             _resourceManager = resourceManager;
             _workContextAccessor = workContextAccessor;
             _virtualPathProvider = virtualPathProvider;
+            _urlHelper = urlHelper;
         }
 
 
@@ -38,29 +41,40 @@ namespace DotNest.Sdk.Filters
 
 
             var currentTheme = _workContextAccessor.Value.GetContext().CurrentTheme;
-            var currentThemePath = _virtualPathProvider.Value.Combine(currentTheme.Location, currentTheme.Name);
+            var currentThemePath = _virtualPathProvider.Value.Combine(currentTheme.Location, currentTheme.Id);
 
             // Favicon.
             var path = _virtualPathProvider.Value.Combine(currentThemePath, "Images", "favicon.ico");
             if (_virtualPathProvider.Value.FileExists(path))
-                _resourceManager.Value.RegisterLink(new LinkEntry { Type = "image/x-icon", Rel = "shortcut icon", Href = path });
+                _resourceManager.Value.RegisterLink(new LinkEntry { Type = "image/x-icon", Rel = "shortcut icon", Href = _urlHelper.Content(path) });
 
             // Stylesheet.
-            path = _virtualPathProvider.Value.Combine(currentThemePath, "Styles", "site.css");
-            if (_virtualPathProvider.Value.FileExists(path))
-                _resourceManager.Value.Include("stylesheet", path, path);
+            if (IncludeResourceIfExists("stylesheet", _virtualPathProvider.Value.Combine(currentThemePath, "Styles", "site.min.css")) == null)
+            {
+                IncludeResourceIfExists("stylesheet", _virtualPathProvider.Value.Combine(currentThemePath, "Styles", "site.css"));
+            }
 
             // Head script.
-            path = _virtualPathProvider.Value.Combine(currentThemePath, "Scripts", "site-head.js");
-            if (_virtualPathProvider.Value.FileExists(path))
-                _resourceManager.Value.Include("script", path, path).AtHead();
+            IncludeResourceIfExists("script", _virtualPathProvider.Value.Combine(currentThemePath, "Scripts", "site-head.js"))?
+                .AtHead();
 
             // Foot script.
-            path = _virtualPathProvider.Value.Combine(currentThemePath, "Scripts", "site-foot.js");
-            if (_virtualPathProvider.Value.FileExists(path))
-                _resourceManager.Value.Include("script", path, path).AtFoot();
+            IncludeResourceIfExists("script", _virtualPathProvider.Value.Combine(currentThemePath, "Scripts", "site-foot.js"))?
+                .AtFoot();
         }
 
         public void OnResultExecuted(ResultExecutedContext filterContext) { }
+
+
+        private RequireSettings IncludeResourceIfExists(string resourceType, string path)
+        {
+            if (_virtualPathProvider.Value.FileExists(path))
+            {
+                var url = _urlHelper.Content(path);
+                return _resourceManager.Value.Include(resourceType, url, url);
+            }
+
+            return null;
+        }
     }
 }
