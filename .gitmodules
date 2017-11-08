@@ -109,3 +109,7 @@
 [submodule "Orchard/src/Orchard.Web/Themes/OrchardAmbassadors.Theme"]
 	path = Orchard/src/Orchard.Web/Themes/OrchardAmbassadors.Theme
 	url = https://github.com/Lombiq/Orchard-Ambassadors-Theme
+[submodule "Orchard/src/Orchard.Web/Themes/ShowOrchard.Theme"]
+	path = Orchard/src/Orchard.Web/Themes/ShowOrchard.Theme
+	url = https://github.com/Lombiq/Show-Orchard-Theme
+	branch = issue/SITE-10
