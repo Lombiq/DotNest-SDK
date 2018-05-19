@@ -40,6 +40,9 @@
 [submodule "Orchard/src/Orchard.Web/Modules/Lombiq.LiquidMarkup"]
 	path = Orchard/src/Orchard.Web/Modules/Lombiq.LiquidMarkup
 	url = https://github.com/Lombiq/Orchard-Liquid-Markup
+[submodule "Orchard/src/Orchard.Web/Modules/Lombiq.Privacy"]
+	path = Orchard/src/Orchard.Web/Modules/Lombiq.Privacy
+	url = https://github.com/Lombiq/Orchard-Privacy
 [submodule "Orchard/src/Orchard.Web/Modules/Lombiq.RestSharp"]
 	path = Orchard/src/Orchard.Web/Modules/Lombiq.RestSharp
 	url = https://github.com/Lombiq/Orchard-RestSharp
