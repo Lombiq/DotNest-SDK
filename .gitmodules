@@ -43,6 +43,7 @@
 [submodule "Orchard/src/Orchard.Web/Modules/Lombiq.Privacy"]
 	path = Orchard/src/Orchard.Web/Modules/Lombiq.Privacy
 	url = https://github.com/Lombiq/Orchard-Privacy
+	branch = issue/OSOE-22
 [submodule "Orchard/src/Orchard.Web/Modules/Lombiq.RestSharp"]
 	path = Orchard/src/Orchard.Web/Modules/Lombiq.RestSharp
 	url = https://github.com/Lombiq/Orchard-RestSharp
