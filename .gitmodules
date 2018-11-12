@@ -118,5 +118,7 @@
 	url = https://github.com/Lombiq/Show-Orchard-Theme
 	branch = issue/SITE-10
 [submodule "Orchard/src/Orchard.Web/Themes/TryOrchard.Theme"]
+
 	path = Orchard/src/Orchard.Web/Themes/TryOrchard.Theme
+
 	url = https://github.com/Lombiq/TryOrchard.net-Theme
