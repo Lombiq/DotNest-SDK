@@ -364,6 +364,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowOrchard.Theme", "Orchar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lombiq.Privacy", "Orchard.Web\Modules\Lombiq.Privacy\Lombiq.Privacy.csproj", "{6384F875-76DF-4417-A7D4-6F7B9705AE3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryOrchard.Theme", "Orchard.Web\Themes\TryOrchard.Theme\TryOrchard.Theme.csproj", "{03825249-F893-4A28-A027-55BD2D495DCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -1590,6 +1592,16 @@ Global
 		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6384F875-76DF-4417-A7D4-6F7B9705AE3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Coverage|Any CPU.Build.0 = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.FxCop|Any CPU.Build.0 = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03825249-F893-4A28-A027-55BD2D495DCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1719,9 +1731,10 @@ Global
 		{6FAF760D-BFF1-4395-AF35-E55498D76140} = {CB82E664-8B1C-42D4-A1EA-E0C15054C4E1}
 		{59DC0405-BE94-4756-B65B-D3B8B96AB6A6} = {1E9F28FA-E0B4-43A3-9DB3-8E30104F8362}
 		{6384F875-76DF-4417-A7D4-6F7B9705AE3D} = {CB82E664-8B1C-42D4-A1EA-E0C15054C4E1}
+		{03825249-F893-4A28-A027-55BD2D495DCD} = {64559133-1417-4CBE-9CDA-8B1EA7B16635}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
 		SolutionGuid = {B2505599-D73C-4830-9E65-70BCA7208424}
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
 	EndGlobalSection
 EndGlobal
