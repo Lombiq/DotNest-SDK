@@ -103,7 +103,7 @@
 	url = https://github.com/Lombiq/Orchard-Profile
 [submodule "Orchard/src/Orchard.Web/Modules/Onestop.Seo"]
 	path = Orchard/src/Orchard.Web/Modules/Onestop.Seo
-	url = https://bitbucket.org/Lombiq/onestop.seo-git
+	url = https://github.com/Lombiq/Onestop.SEO.git
 [submodule "Orchard/src/Orchard.Web/Themes/ElementalGankery.MediaTheme"]
 	path = Orchard/src/Orchard.Web/Themes/ElementalGankery.MediaTheme
 	url = https://github.com/BenedekFarkas/Elemental-Gankery-Media-Theme
