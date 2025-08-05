@@ -2,13 +2,13 @@
 
 ## Overview
 
-[DotNest SDK](https://github.com/Lombiq/DotNest-SDK) is a local developer environment for building Media Themes to be deployed to Orchard 1 sites running on [DotNest](http://dotnest.com).
+[DotNest SDK](https://github.com/Lombiq/DotNest-SDK) is a local developer environment for building Media Themes to be deployed to Orchard 1 sites running on [DotNest](https://dotnest.com).
 
 Creating Orchard 1 sites is no longer available on DotNest (but existing ones are still running), you can only create Orchard Core ones. If you're starting a new project, check out [DotNest Core SDK](https://github.com/Lombiq/DotNest-Core-SDK) instead.
 
 The base of the source code on the `master` branch is the same Orchard version that is running on DotNest as well as all the hotfixes and mods we've applied to it. On top of that, all the open-source modules and themes are added as Git submodules, which gives you the ability to develop your theme and run your site locally in an environment quite close to the live DotNest site.
 
-This project (along with [DotNest](https://dotnest.com), the [Orchard CMS](http://orchardproject.net) SaaS) is developed by [Lombiq Technologies Ltd](https://lombiq.com). Commercial-grade support is available through Lombiq.
+This project (along with [DotNest](https://dotnest.com), the [Orchard CMS](https://orchardproject.net) SaaS) is developed by [Lombiq Technologies Ltd](https://lombiq.com). Commercial-grade support is available through Lombiq.
 
 ## Getting started
 
