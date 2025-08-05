@@ -17,13 +17,13 @@ Fork the [DotNest SDK](https://github.com/Lombiq/DotNest-SDK) repository or crea
 ## Working with the repository
 
 - Whenever you create any branches, make sure to choose names that don't collide with the ones in the SDK. If your project is called e.g. `Awesome Project`, then your development branch should be created on top of `dev` and name it e.g. `dev-ap`.
-- We recommend you create such a development branch and set it as the default branch of your repository.
+- We recommend you create such a development branch and set it as the default branch of your fork.
 - Create a custom solution file on your own development branch as a copy of `DotNest.SDK.sln`, e.g. `AwesomeProject.sln`. Your custom projects should be added to this solution, not `Orchard.sln` or `DotNest.SDK.sln`.
 
-## Updating your repository with changes from the SDK
+## Updating your fork with changes from the SDK
 
-- If your repository is a fork, you can use the [`Sync fork` feature](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) on GitHub to manually update it.
-- Regardless of whether your repository is a fork or not, you can also automate updating the `dev` branch of your repository from the SDK using our [Mirror branches workflow](https://github.com/Lombiq/GitHub-Actions/blob/dev/Docs/Workflows/Productivity/MirrorBranches.md). A minimal mirror workflow looks like this (you need to update the `destination-repository` parameter and set up a secret for `DESTINATION_TOKEN`):
+- If your repository is an actual fork, you can use the [`Sync fork` feature](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) on GitHub to manually update it.
+- Regardless of whether your repository is a fork or not, you can also automate updating its `dev` branch from the SDK using our [Mirror branches workflow](https://github.com/Lombiq/GitHub-Actions/blob/dev/Docs/Workflows/Productivity/MirrorBranches.md). A minimal mirror workflow looks like this (you need to update the `destination-repository` parameter and set up a secret for `DESTINATION_TOKEN`):
 
     ```yaml
     name: Mirror from SDK
