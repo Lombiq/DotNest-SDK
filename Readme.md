@@ -12,14 +12,13 @@ This project (along with [DotNest](https://dotnest.com), the [Orchard CMS](https
 
 ## Getting started
 
-- Fork the [DotNest SDK](https://github.com/Lombiq/DotNest-SDK) repository or create an empty repository. For simplicity, we'll refer to your repository as `fork` from now on and assume a simple branching strategy with only one additional branch for development, but your use-case might be more complex.
-- In case you start with an empty repository, clone the SDK and push the `dev` branch into your repository.
+Fork the [DotNest SDK](https://github.com/Lombiq/DotNest-SDK) repository or create an empty repository and push the SDK's `dev` branch to it. For simplicity, we'll refer to your repository as `fork` from now on and assume a simple branching strategy with only one additional branch for development, but your use-case can be more complex.
 
 ## Working with the repository
 
 - Whenever you create any branches, make sure to choose names that don't collide with the ones in the SDK. If your project is called e.g. `Awesome Project`, then your development branch should be created on top of `dev` and name it e.g. `dev-ap`.
 - We recommend you create such a development branch and set it as the default branch of your repository.
-- In case new commits are pushed to your fork from the SDK, check the changes (e.g. new modules might be added that you also need to add to your custom solution) and merge `dev` into your development branch.
+- Create a custom solution file on your own development branch as a copy of `DotNest.SDK.sln`, e.g. `AwesomeProject.sln`. Your custom projects should be added to this solution, not `Orchard.sln` or `DotNest.SDK.sln`.
 
 ## Updating your repository with changes from the SDK
 
@@ -46,10 +45,11 @@ This project (along with [DotNest](https://dotnest.com), the [Orchard CMS](https
           DESTINATION_TOKEN: ${{ secrets.AWESOME_PROJECT_MIRROR_TOKEN }}
     ```
 
+In case new commits are pushed to your fork from the SDK, check the changes (e.g. new modules might be added that you also need to add to your custom solution) and merge `dev` into your development branch.
+
 ## Theme development
 
-- Create a custom solution file on your own development branch as a copy of `DotNest.SDK.sln`, e.g. `AwesomeProject.sln`. Your custom projects should be added to this solution, not `Orchard.sln` or `DotNest.SDK.sln`.
-- From here on, general Orchard theme development rules apply with some DotNest-related extra. You can read about all these on the [`Theming a DotNest site` page of the DotNest Knowledge Base](https://dotnest.com/knowledge-base/topics/theming/).
+- General Orchard theme development rules apply with some DotNest-related extra. You can read about all these on the [`Theming a DotNest site` page of the DotNest Knowledge Base](https://dotnest.com/knowledge-base/topics/theming/).
 - If your theme contains Liquid templates, enable the `Liquid Markup View Engine` feature for these to be picked up by Orchard.
 - The Media Theme on DotNest also has an automated mechanism to include some site-level resources. This might come in handy e.g. if your theme doesn't have a base theme and/or you're not overriding the `Document` or `Layout` shapes. You can enable the same functionality by enabling the `DotNest SDK` feature, which will automatically include the following resources on every page load (if they are available in the active theme): `favicon.ico` in the `Images` folder, `site.css` in the `Styles` folder, and `site-head.js` and `site-foot.js` in the `Scripts` folder.
 - You can synchronize content from your site running on DotNest by exporting it and then importing it locally after enabling the `Import-Export` feature.
